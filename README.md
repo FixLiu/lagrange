@@ -1,1 +1,1 @@
-# lagrange
+Audio Sample Rate Convert using Lagrange interpolate method.
