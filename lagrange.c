@@ -9,8 +9,6 @@
 /******************************************************************************
 *                            模块内部宏定义                              *
 ******************************************************************************/
-// when N<=20, alias become samller.
-// when N>=20, noise become bigger.
 #define N 3
 /******************************************************************************
 *                            模块内部数据类型                            *
@@ -85,7 +83,7 @@ LAGHandle LagrangeCreate(int SrcLen, int DstLen)
 			}
 			if (!IsNormal(p[k]))
 			{
-				PRINTF("need check:%f\n", p[k]); // order(e.g.479) of polynomial is too high
+				PRINTF("need check:%f\n", p[k]);
 			}
 		}
 		p += (N+1);
